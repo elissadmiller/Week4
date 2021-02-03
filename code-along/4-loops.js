@@ -13,7 +13,10 @@ console.log(burger[6])
 console.log(burger[7])
 
 // with a loop
-
+for (let i = 0; i < burger.length; i++) {
+  let ingredient = burger[i]
+  console.log(ingredient)
+}
 
 //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 

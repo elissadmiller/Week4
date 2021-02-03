@@ -21,6 +21,18 @@ let quotes = [
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
 
 window.addEventListener('DOMContentLoaded', function() {
+
   let outputElement = document.querySelector('.output')
-  outputElement.insertAdjacentHTML('beforeend', 'Hello!')
+
+for (let i = 0; i < quotes.length; i++) {
+  console.log(`hey, index is: ${i}`)
+let quote = quotes[i]
+console.log(quote)
+
+let outputElement = document.querySelector('.output')
+outputElement.insertAdjacentHTML('beforeend', '
+<h1 class="font-bold my-8 text-blue-300>${quote}</h1>
+')
+}
+
 })
